@@ -40,8 +40,8 @@ body {
 /* here we go */
 
 .container {
-  max-width: 1000px;
-  margin: 60px;
+  max-width: 800px;
+  margin: 60px 30px;
 }
 
 .container img {
@@ -49,8 +49,8 @@ body {
   margin-top: 2em;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 800px) {
   .container {
-    margin: 100px;
+    margin: 100px auto;
   }
 }
