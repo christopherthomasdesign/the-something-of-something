@@ -33,7 +33,7 @@ body {
 }
 
 ::selection {
-    color: #000; 
+    color: #000;
     background: yellow;
 }
 
@@ -41,5 +41,16 @@ body {
 
 .container {
   max-width: 1000px;
-  margin: 100px; auto;
+  margin: 60px;
+}
+
+.container img {
+  width: 100%;
+  margin-top: 2em;
+}
+
+@media (min-width: 640px) {
+  .container {
+    margin: 100px;
+  }
 }
