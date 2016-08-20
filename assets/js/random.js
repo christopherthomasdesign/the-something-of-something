@@ -74,13 +74,16 @@
       + "?q="+encodeURIComponent(q)
       + "&color=Monochrome"
       + "&imageType=Line"
-      + "&count=1";
+      + "&count=10"
+      + "&size=Large";
 
     $.ajax({
       url: bingURL,
       headers: { "Ocp-Apim-Subscription-Key" : apiKey },
       success: function(data, status, xhr) {
-        var img = '<img src="'+data.value[0].contentUrl+'">';
+        var i = Math.floor(Math.random() * data.value.length);
+
+        var img = '<img src="'+data.value[i].contentUrl+'">';
         $('.container').append(img);
       }
     });
